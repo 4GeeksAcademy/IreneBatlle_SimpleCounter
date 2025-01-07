@@ -1,17 +1,38 @@
 @import 'bootstrap/dist/css/bootstrap.css';
 
-.bigCounter{
-    text-align: center;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     background: black;
+    color: white; /* Cambia el color del texto por defecto para que sea visible */
 }
-.bigCounter div{
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ocupar todo el alto de la pantalla */
+    text-align: center;
+}
+
+.bigCounter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bigCounter div {
     display: inline-block;
-    font-size: 60px;
+    font-size: 100px;
     line-height: 60px;
     background: #101010;
     color: green;
     padding: 10px;
     margin: 3px;
     font-family: monospace;
+}
 
+input, button {
+    margin: 10px;
 }
